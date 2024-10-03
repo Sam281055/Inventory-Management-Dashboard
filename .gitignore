@@ -2,6 +2,11 @@
 
 # dependencies
 client/node_modules
+server/node_modules
+server/dist/
+server/.env/
+client/.env/
+client/.next/
 client/pnp
 client/pnp.js
 client/yarn/install-state.gz
