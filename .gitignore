@@ -11,9 +11,6 @@ client/pnp
 client/pnp.js
 client/yarn/install-state.gz
 
-# testing
-/coverage
-
 # next.js
 client/next/
 client/out/
