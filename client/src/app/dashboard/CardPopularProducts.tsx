@@ -7,7 +7,7 @@ import Image from "next/image";
 const CardPopularProducts = () => {
   const { data: DashboardMetrics, isLoading } = useGetDashboardMetricsQuery();
   
-  const getRandomProduct:any = () => {
+  const getRandomProduct = () => {
     const urls: string[] = [
       "https://utfs.io/f/IR1IIyUPzpSMvOxFGBujE9I4SGPZU5OsYgW10QapNFzbX2xo",
       "https://utfs.io/f/IR1IIyUPzpSM3clsEnu1O9nuSMP6wgbTFrGczB5l8VH4Q3Ip",
