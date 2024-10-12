@@ -78,7 +78,7 @@ const Sidebar = () => {
           `}
       >
          <Image
-                src="https://sam-inventorymanagement.s3.sa-east-1.amazonaws.com/logo.png"
+                src="https://utfs.io/f/IR1IIyUPzpSMG4YthBLZSx0MH72bVl9gvQk85cN1fKzXaAFD"
                 alt="edstock-logo"
                 width={27}
                 height={27}

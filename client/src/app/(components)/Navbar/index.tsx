@@ -75,7 +75,7 @@ const Navbar = () => {
           <div className="flex items-center gap-3 cursor-pointer">
             <div className="w-9 h-9">
               <Image
-                src="https://sam-inventorymanagement.s3.sa-east-1.amazonaws.com/profile.jpg"
+                src="https://utfs.io/f/IR1IIyUPzpSMfkaePiW0DG4zJac9wgkFNBW8VAejusCREHbS"
                 alt="Profile"
                 width={50}
                 height={50}

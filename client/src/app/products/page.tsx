@@ -29,6 +29,16 @@ const Products = () => {
     await createProduct(productData);
   };
 
+  const getRandomProduct: any = () => {
+    const urls: string[] = [
+      "https://utfs.io/f/IR1IIyUPzpSMvOxFGBujE9I4SGPZU5OsYgW10QapNFzbX2xo",
+      "https://utfs.io/f/IR1IIyUPzpSM3clsEnu1O9nuSMP6wgbTFrGczB5l8VH4Q3Ip",
+      "https://utfs.io/f/IR1IIyUPzpSMooLblMPzV8DUiZjWnlyGQHY619IOk07rAREc",
+    ];
+    const randomIndex: number = Math.floor(Math.random() * urls.length);
+    return urls[randomIndex];
+  };
+
   if (isLoading) {
     return <div className="py-4">Loading...</div>;
   }
@@ -81,9 +91,7 @@ const Products = () => {
             >
               <div className="flex flex-col items-center">
                 <Image
-                  src={`https://sam-inventorymanagement.s3.sa-east-1.amazonaws.com/product${
-                    Math.floor(Math.random() * 3) + 1
-                  }.png`}
+                  src={getRandomProduct()}
                   alt={product.name}
                   width={150}
                   height={150}

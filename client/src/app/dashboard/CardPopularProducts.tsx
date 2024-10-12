@@ -6,6 +6,17 @@ import Image from "next/image";
 
 const CardPopularProducts = () => {
   const { data: DashboardMetrics, isLoading } = useGetDashboardMetricsQuery();
+  
+  const getRandomProduct:any = () => {
+    const urls: string[] = [
+      "https://utfs.io/f/IR1IIyUPzpSMvOxFGBujE9I4SGPZU5OsYgW10QapNFzbX2xo",
+      "https://utfs.io/f/IR1IIyUPzpSM3clsEnu1O9nuSMP6wgbTFrGczB5l8VH4Q3Ip",
+      "https://utfs.io/f/IR1IIyUPzpSMooLblMPzV8DUiZjWnlyGQHY619IOk07rAREc"
+    ];
+    const randomIndex: number = Math.floor(Math.random() * urls.length);
+    return urls[randomIndex];
+  }
+
 
   return (
     <div className="row-span-3 xl:row-span-6 bg-white shadow-md rounded-2xl pb-16">
@@ -25,7 +36,8 @@ const CardPopularProducts = () => {
               >
                 <div className="flex items-center gap-3">
                   <Image
-                    src={`https://sam-inventorymanagement.s3.sa-east-1.amazonaws.com/product${Math.floor(Math.random()*3)+1}.png`}
+                    // src={`https://sam-inventorymanagement.s3.sa-east-1.amazonaws.com/product${Math.floor(Math.random()*3)+1}.png`}
+                    src={getRandomProduct()}
                     alt={product.name}
                     width={48}
                     height={48}

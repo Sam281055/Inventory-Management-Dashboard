@@ -63,6 +63,13 @@ model PurchaseSummary {
   date              DateTime
 }
 
+model expenses {
+  expenseId String   @id
+  category  String
+  amount    BigInt
+  timestamp DateTime
+}
+
 model ExpenseSummary {
   expenseSummaryId  String              @id
   totalExpenses     Float
