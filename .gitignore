@@ -1,21 +1,3 @@
-# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
-
-# dependencies
-client/node_modules
-server/node_modules
-server/dist/
-server/.env/
-client/.env/
-client/.next/
-client/pnp
-client/pnp.js
-client/yarn/install-state.gz
-
-# next.js
-client/next/
-client/out/
-
-# debug
-client/npm-debug.log*
-client/yarn-debug.log*
-client/yarn-error.log*
+node_modules
+# Keep environment variables out of version control
+.env
